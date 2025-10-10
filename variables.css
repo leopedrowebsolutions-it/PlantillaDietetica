@@ -1,0 +1,69 @@
+/* ============================================
+   VARIABLES DE COLORES - PLANTILLA DIETÉTICA
+   ============================================ */
+
+:root {
+  /* Colores Principales */
+  --color-primary: #4CAF50;           /* Verde principal */
+  --color-primary-light: #81C784;     /* Verde claro */
+  --color-primary-dark: #388E3C;      /* Verde oscuro */
+  
+  /* Colores Secundarios */
+  --color-secondary: #FF9800;         /* Naranja */
+  --color-secondary-light: #FFB74D;   /* Naranja claro */
+  --color-secondary-dark: #F57C00;    /* Naranja oscuro */
+  
+  /* Colores de Acento */
+  --color-accent: #2196F3;            /* Azul */
+  --color-accent-light: #64B5F6;      /* Azul claro */
+  --color-accent-dark: #1976D2;       /* Azul oscuro */
+  
+  /* Colores de Fondo */
+  --color-background: #FFFFFF;        /* Fondo blanco */
+  --color-background-light: #F5F5F5;  /* Gris muy claro */
+  --color-background-dark: #E0E0E0;   /* Gris claro */
+  
+  /* Colores de Texto */
+  --color-text-primary: #212121;      /* Texto principal */
+  --color-text-secondary: #757575;    /* Texto secundario */
+  --color-text-light: #FFFFFF;        /* Texto claro */
+  
+  /* Colores de Estado */
+  --color-success: #4CAF50;           /* Éxito */
+  --color-warning: #FFC107;           /* Advertencia */
+  --color-error: #F44336;             /* Error */
+  --color-info: #2196F3;              /* Información */
+  
+  /* Colores de Secciones Específicas */
+  --color-header-bg: #FFFFFF;         /* Fondo del header */
+  --color-hero-bg: #F1F8E9;           /* Fondo del hero (verde muy claro) */
+  --color-footer-bg: #2E7D32;         /* Fondo del footer (verde oscuro) */
+  --color-card-bg: #FFFFFF;           /* Fondo de tarjetas */
+  
+  /* Colores de Botones */
+  --color-btn-primary: #4CAF50;       /* Botón principal */
+  --color-btn-primary-hover: #45A049; /* Botón principal hover */
+  --color-btn-secondary: #FF9800;     /* Botón secundario */
+  --color-btn-secondary-hover: #E68900; /* Botón secundario hover */
+  
+  /* Sombras y Bordes */
+  --color-border: #E0E0E0;            /* Color de bordes */
+  --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra suave */
+  --color-shadow-dark: rgba(0, 0, 0, 0.2); /* Sombra oscura */
+  
+  /* Overlays */
+  --color-overlay: rgba(0, 0, 0, 0.5); /* Overlay oscuro */
+  --color-overlay-light: rgba(255, 255, 255, 0.9); /* Overlay claro */
+}
+
+/* Tema Oscuro (Opcional) */
+[data-theme="dark"] {
+  --color-background: #121212;
+  --color-background-light: #1E1E1E;
+  --color-background-dark: #2C2C2C;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B0B0B0;
+  --color-card-bg: #1E1E1E;
+  --color-header-bg: #1E1E1E;
+  --color-border: #333333;
+}
