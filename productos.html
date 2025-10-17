@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dietetica</title>
+    <title>dietetica/productos</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
@@ -27,20 +28,41 @@
         </nav>
     </header>
     <main>
-        <section>
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Nuestros Productos</h1>
             
-        </section>
-        <section>
+            <!-- Filtros -->
+            <div class="row mb-4">
+                <div class="col-md-6 mb-3">
+                    <input type="text" id="buscar" class="form-control" placeholder="Buscar productos...">
+                </div>
+                <div class="col-md-6 mb-3">
+                    <select id="filtro-categoria" class="form-select">
+                        <option value="todos">Todas las categorías</option>
+                        <option value="granos">Granos</option>
+                        <option value="semillas">Semillas</option>
+                        <option value="cereales">Cereales</option>
+                        <option value="aceites">Aceites</option>
+                        <option value="harinas">Harinas</option>
+                        <option value="frutos-secos">Frutos Secos</option>
+                    </select>
+                </div>
+            </div>
             
-        </section>
-        <section>
-            
-        </section>
+            <div id="productos-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Los productos se cargarán aquí dinámicamente -->
+            </div>
+        </div>
     </main>
     <footer>
         
     </footer>
-    <!-- Bootstrap JavaScript Bundle -->
+
+        <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- Script de productos -->
+    <script src="productos.js"></script>
+
 </body>
 </html>
