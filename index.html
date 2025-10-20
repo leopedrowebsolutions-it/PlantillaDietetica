@@ -6,41 +6,329 @@
     <title>Dietetica</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Dietetica</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                <a class="nav-link" href="productos.html">productos</a>
-                <a class="nav-link" href="#">Cocina</a>
-                <a class="nav-link disabled" aria-disabled="true">Contacto</a>
-            </div>
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="productos.html">Productos</a>
+                    <a class="nav-link" href="#">Cocina</a>
+                    <a class="nav-link" href="#">Contacto</a>
+                </div>
+                <div class="ms-auto">
+                    <a href="carrito.html" class="btn btn-outline-primary position-relative">
+                        <i class="bi bi-cart3"></i> Carrito
+                        <span id="carrito-contador" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                            0
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
         </nav>
     </header>
     <main>
-        <section>
-            
+
+        <section class="productosDestacados">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                <div class="carousel-indicators">
+                    <!-- Los indicadores se cargarán dinámicamente -->
+                </div>
+                <div class="carousel-inner">
+                    <!-- Los productos se cargarán dinámicamente -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <section>
-            
+        <section class="productosOferta py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">
+                    <i class="bi bi-tag-fill text-danger"></i> Productos en Oferta
+                </h2>
+                <div id="ofertas-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Los productos en oferta se cargarán aquí dinámicamente -->
+                </div>
+                <div class="text-center mt-4">
+                    <a href="productos.html" class="btn btn-primary btn-lg">Ver todos los productos</a>
+                </div>
+            </div>
         </section>
-        <section>
-            
+        <section class="envios py-5">
+            <div class="container">
+                <h2 class="text-center mb-5">
+                    <i class="bi bi-info-circle-fill text-primary"></i> Información de Compra
+                </h2>
+                
+                <div class="row g-4">
+                    <!-- Métodos de Pago -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-center mb-4">
+                                    <i class="bi bi-credit-card text-success"></i> Métodos de Pago
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>Tarjetas de Crédito y Débito</strong>
+                                        <p class="ms-4 mb-0 text-muted">Visa, Mastercard, American Express</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>Transferencia Bancaria</strong>
+                                        <p class="ms-4 mb-0 text-muted">Pago directo desde tu cuenta bancaria</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>Mercado Pago</strong>
+                                        <p class="ms-4 mb-0 text-muted">Paga en cuotas sin interés</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-check-circle-fill text-success"></i>
+                                        <strong>Efectivo</strong>
+                                        <p class="ms-4 mb-0 text-muted">Pago contra entrega en tu domicilio</p>
+                                    </li>
+                                </ul>
+                                <div class="alert alert-info mt-3">
+                                    <i class="bi bi-shield-check"></i> Todas las transacciones son seguras y encriptadas
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Zonas de Envío -->
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title text-center mb-4">
+                                    <i class="bi bi-truck text-primary"></i> Zonas de Envío
+                                </h3>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3">
+                                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                                        <strong>Capital Federal</strong>
+                                        <p class="ms-4 mb-0 text-muted">Envío gratis en compras mayores a $5.000</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                                        <strong>Gran Buenos Aires</strong>
+                                        <p class="ms-4 mb-0 text-muted">Envío gratis en compras mayores a $8.000</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-geo-alt-fill text-primary"></i>
+                                        <strong>Interior del País</strong>
+                                        <p class="ms-4 mb-0 text-muted">Envío por correo, costo según destino</p>
+                                    </li>
+                                    <li class="mb-3">
+                                        <i class="bi bi-shop text-primary"></i>
+                                        <strong>Retiro en Local</strong>
+                                        <p class="ms-4 mb-0 text-muted">Sin cargo, de lunes a sábados</p>
+                                    </li>
+                                </ul>
+                                <div class="alert alert-warning mt-3">
+                                    <i class="bi bi-clock"></i> Entregas en 24-48hs hábiles en CABA y GBA
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Información adicional -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <h4 class="mb-3">
+                                    <i class="bi bi-question-circle text-info"></i> ¿Necesitas ayuda?
+                                </h4>
+                                <p class="mb-3">Contactanos por WhatsApp, email o teléfono para resolver tus dudas</p>
+                                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                                    <a href="#" class="btn btn-success">
+                                        <i class="bi bi-whatsapp"></i> WhatsApp
+                                    </a>
+                                    <a href="#" class="btn btn-primary">
+                                        <i class="bi bi-envelope"></i> Email
+                                    </a>
+                                    <a href="#" class="btn btn-info">
+                                        <i class="bi bi-telephone"></i> Teléfono
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        
+    <footer class="text-light pt-5 pb-3">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Columna 1: Sobre Nosotros -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">
+                        <i class="bi bi-shop"></i> Dietética Natural
+                    </h5>
+                    <p class="text-secondary">
+                        Tu tienda de confianza para productos naturales y saludables. 
+                        Calidad garantizada desde 2020.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-light fs-4"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Inicio
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="productos.html" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Productos
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="carrito.html" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Carrito
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Sobre Nosotros
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 3: Categorías -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">Categorías</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Granos y Legumbres
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Semillas
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Cereales
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Aceites
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Harinas
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-secondary text-decoration-none">
+                                <i class="bi bi-chevron-right"></i> Frutos Secos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Columna 4: Contacto -->
+                <div class="col-md-3">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled text-secondary">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                            Av. Corrientes 1234, CABA
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone-fill text-success"></i>
+                            +54 11 1234-5678
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-whatsapp text-success"></i>
+                            +54 9 11 1234-5678
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-envelope-fill text-danger"></i>
+                            info@dietetica.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-clock-fill text-warning"></i>
+                            Lun-Sáb: 9:00 - 20:00
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Separador -->
+            <hr class="my-4 border-secondary">
+            
+            <!-- Métodos de Pago -->
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <p class="text-secondary mb-2">Métodos de Pago Aceptados</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <i class="bi bi-credit-card fs-2 text-secondary"></i>
+                        <i class="bi bi-paypal fs-2 text-secondary"></i>
+                        <i class="bi bi-bank fs-2 text-secondary"></i>
+                        <i class="bi bi-cash fs-2 text-secondary"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="text-secondary mb-0">
+                        &copy; 2025 Dietética Natural. Todos los derechos reservados.
+                        <span class="mx-2">|</span>
+                        <a href="#" class="text-secondary text-decoration-none">Términos y Condiciones</a>
+                        <span class="mx-2">|</span>
+                        <a href="#" class="text-secondary text-decoration-none">Política de Privacidad</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
     <!-- Bootstrap JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Script del carrito -->
+    <script src="carrito.js"></script>
+    <!-- Script de index -->
+    <script src="index.js"></script>
 </body>
 </html>

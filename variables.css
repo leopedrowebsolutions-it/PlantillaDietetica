@@ -50,6 +50,7 @@
   --color-border: #E0E0E0;            /* Color de bordes */
   --color-shadow: rgba(0, 0, 0, 0.1); /* Sombra suave */
   --color-shadow-dark: rgba(0, 0, 0, 0.2); /* Sombra oscura */
+  --color-shadow-light: #E0E0E0 ;
   
   /* Overlays */
   --color-overlay: rgba(0, 0, 0, 0.5); /* Overlay oscuro */

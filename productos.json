@@ -4,24 +4,33 @@
         "nombre": "Quinoa Orgánica",
         "descripcion": "Quinoa orgánica de alta calidad, rica en proteínas y minerales. Ideal para ensaladas y guarniciones.",
         "precio": 1200,
-        "imagen": "https://via.placeholder.com/300x200?text=Quinoa+Organica",
-        "categoria": "granos"
+        "imagen": "assets/images/quinoaOrganica.jpg",
+        "categoria": "granos",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 20
     },
     {
         "id": 2,
         "nombre": "Semillas de Chía",
         "descripcion": "Semillas de chía premium, fuente de omega-3 y fibra. Perfectas para batidos y postres saludables.",
         "precio": 850,
-        "imagen": "https://via.placeholder.com/300x200?text=Semillas+de+Chia",
-        "categoria": "semillas"
+        "imagen": "assets/images/semillasDeChia.jpg",
+        "categoria": "semillas",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 3,
         "nombre": "Granola Artesanal",
         "descripcion": "Granola casera con avena, frutos secos y miel. Sin conservantes ni azúcares añadidos.",
         "precio": 950,
-        "imagen": "https://via.placeholder.com/300x200?text=Granola+Artesanal",
-        "categoria": "cereales"
+        "imagen": "assets/images/GranolaArtesanal.jpg",
+        "categoria": "cereales",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 15
     },
     {
         "id": 4,
@@ -29,7 +38,10 @@
         "descripcion": "Aceite de coco extra virgen prensado en frío. Ideal para cocinar y cuidado personal.",
         "precio": 1500,
         "imagen": "https://via.placeholder.com/300x200?text=Aceite+de+Coco",
-        "categoria": "aceites"
+        "categoria": "aceites",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 5,
@@ -37,7 +49,10 @@
         "descripcion": "Harina de almendras sin gluten, perfecta para repostería saludable y dietas keto.",
         "precio": 1800,
         "imagen": "https://via.placeholder.com/300x200?text=Harina+de+Almendras",
-        "categoria": "harinas"
+        "categoria": "harinas",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 25
     },
     {
         "id": 6,
@@ -45,7 +60,10 @@
         "descripcion": "Mezcla premium de nueces, almendras, avellanas y castañas. Snack nutritivo y energético.",
         "precio": 1350,
         "imagen": "https://via.placeholder.com/300x200?text=Mix+de+Frutos+Secos",
-        "categoria": "frutos-secos"
+        "categoria": "frutos-secos",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 7,
@@ -53,7 +71,10 @@
         "descripcion": "Arroz integral de grano largo, rico en fibra y nutrientes. Cultivado sin pesticidas.",
         "precio": 680,
         "imagen": "https://via.placeholder.com/300x200?text=Arroz+Integral",
-        "categoria": "granos"
+        "categoria": "granos",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 10
     },
     {
         "id": 8,
@@ -61,7 +82,10 @@
         "descripcion": "Semillas de girasol peladas, ricas en vitamina E y magnesio. Perfectas para snacks.",
         "precio": 720,
         "imagen": "https://via.placeholder.com/300x200?text=Semillas+Girasol",
-        "categoria": "semillas"
+        "categoria": "semillas",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 5
     },
     {
         "id": 9,
@@ -69,7 +93,10 @@
         "descripcion": "Avena arrollada tradicional, ideal para desayunos saludables y preparaciones dulces.",
         "precio": 550,
         "imagen": "https://via.placeholder.com/300x200?text=Avena+Arrollada",
-        "categoria": "cereales"
+        "categoria": "cereales",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 10,
@@ -77,7 +104,10 @@
         "descripcion": "Aceite de oliva extra virgen primera prensada en frío. Sabor intenso y aromático.",
         "precio": 2200,
         "imagen": "https://via.placeholder.com/300x200?text=Aceite+Oliva",
-        "categoria": "aceites"
+        "categoria": "aceites",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 12
     },
     {
         "id": 11,
@@ -85,7 +115,10 @@
         "descripcion": "Harina de coco sin gluten, baja en carbohidratos. Ideal para dietas paleo y keto.",
         "precio": 1650,
         "imagen": "https://via.placeholder.com/300x200?text=Harina+Coco",
-        "categoria": "harinas"
+        "categoria": "harinas",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 12,
@@ -93,7 +126,10 @@
         "descripcion": "Almendras crudas sin sal, fuente de proteína vegetal y grasas saludables.",
         "precio": 1900,
         "imagen": "https://via.placeholder.com/300x200?text=Almendras",
-        "categoria": "frutos-secos"
+        "categoria": "frutos-secos",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 18
     },
     {
         "id": 13,
@@ -101,7 +137,10 @@
         "descripcion": "Lentejas rojas de cocción rápida, ricas en proteínas y hierro. Perfectas para sopas.",
         "precio": 580,
         "imagen": "https://via.placeholder.com/300x200?text=Lentejas+Rojas",
-        "categoria": "granos"
+        "categoria": "granos",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 14,
@@ -109,7 +148,10 @@
         "descripcion": "Semillas de lino molidas, fuente de omega-3 y fibra soluble. Beneficiosas para la digestión.",
         "precio": 780,
         "imagen": "https://via.placeholder.com/300x200?text=Semillas+Lino",
-        "categoria": "semillas"
+        "categoria": "semillas",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 8
     },
     {
         "id": 15,
@@ -117,7 +159,10 @@
         "descripcion": "Muesli natural con frutas deshidratadas y frutos secos. Sin azúcares añadidos.",
         "precio": 1100,
         "imagen": "https://via.placeholder.com/300x200?text=Muesli",
-        "categoria": "cereales"
+        "categoria": "cereales",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 16,
@@ -125,7 +170,10 @@
         "descripcion": "Aceite de sésamo tostado, ideal para cocina asiática y aderezos. Sabor intenso.",
         "precio": 1350,
         "imagen": "https://via.placeholder.com/300x200?text=Aceite+Sesamo",
-        "categoria": "aceites"
+        "categoria": "aceites",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 17,
@@ -133,7 +181,10 @@
         "descripcion": "Harina de avena integral, perfecta para panqueques, galletas y panes saludables.",
         "precio": 890,
         "imagen": "https://via.placeholder.com/300x200?text=Harina+Avena",
-        "categoria": "harinas"
+        "categoria": "harinas",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 15
     },
     {
         "id": 18,
@@ -141,7 +192,10 @@
         "descripcion": "Nueces de nogal sin cáscara, ricas en omega-3 y antioxidantes. Snack cerebral.",
         "precio": 2100,
         "imagen": "https://via.placeholder.com/300x200?text=Nueces",
-        "categoria": "frutos-secos"
+        "categoria": "frutos-secos",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 19,
@@ -149,7 +203,10 @@
         "descripcion": "Garbanzos secos de primera calidad, ideales para hummus, guisos y ensaladas.",
         "precio": 620,
         "imagen": "https://via.placeholder.com/300x200?text=Garbanzos",
-        "categoria": "granos"
+        "categoria": "granos",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 10
     },
     {
         "id": 20,
@@ -157,7 +214,10 @@
         "descripcion": "Semillas de calabaza tostadas sin sal, ricas en zinc y magnesio. Snack nutritivo.",
         "precio": 950,
         "imagen": "https://via.placeholder.com/300x200?text=Semillas+Calabaza",
-        "categoria": "semillas"
+        "categoria": "semillas",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 21,
@@ -165,7 +225,10 @@
         "descripcion": "Copos de maíz naturales sin azúcar añadido. Desayuno crujiente y saludable.",
         "precio": 650,
         "imagen": "https://via.placeholder.com/300x200?text=Copos+Maiz",
-        "categoria": "cereales"
+        "categoria": "cereales",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 20
     },
     {
         "id": 22,
@@ -173,7 +236,10 @@
         "descripcion": "Aceite de aguacate virgen, alto punto de humo. Ideal para cocinar a altas temperaturas.",
         "precio": 2800,
         "imagen": "https://via.placeholder.com/300x200?text=Aceite+Aguacate",
-        "categoria": "aceites"
+        "categoria": "aceites",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 23,
@@ -181,7 +247,10 @@
         "descripcion": "Harina de garbanzo sin gluten, alta en proteínas. Perfecta para rebozados y masas.",
         "precio": 980,
         "imagen": "https://via.placeholder.com/300x200?text=Harina+Garbanzo",
-        "categoria": "harinas"
+        "categoria": "harinas",
+        "stock": 10,
+        "oferta": false,
+        "descuento": 0
     },
     {
         "id": 24,
@@ -189,6 +258,9 @@
         "descripcion": "Pistachos sin sal con cáscara, ricos en proteínas y fibra. Snack delicioso.",
         "precio": 2400,
         "imagen": "https://via.placeholder.com/300x200?text=Pistachos",
-        "categoria": "frutos-secos"
+        "categoria": "frutos-secos",
+        "stock": 10,
+        "oferta": true,
+        "descuento": 22
     }
 ]

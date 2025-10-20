@@ -24,14 +24,30 @@ function mostrarProductos(productos) {
     }
     
     productos.forEach(producto => {
+        // Calcular precio con descuento si está en oferta
+        const precioOriginal = producto.precio;
+        const precioConDescuento = producto.oferta ? 
+            Math.round(precioOriginal * (1 - producto.descuento / 100)) : 
+            precioOriginal;
+        
+        const badgeOferta = producto.oferta ? 
+            `<span class="position-absolute top-0 end-0 badge bg-danger m-2">-${producto.descuento}%</span>` : 
+            '';
+        
+        const precioHTML = producto.oferta ? 
+            `<p class="mb-1"><span class="text-decoration-line-through text-muted">$${precioOriginal.toLocaleString()}</span></p>
+             <p class="fw-bold text-success fs-5 mb-2">$${precioConDescuento.toLocaleString()}</p>` :
+            `<p class="fw-bold text-success fs-5 mb-2">$${precioOriginal.toLocaleString()}</p>`;
+        
         const productoHTML = `
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 position-relative">
+                    ${badgeOferta}
                     <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
-                    <div class="card-body">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">${producto.nombre}</h5>
-                        <p class="card-text">${producto.descripcion}</p>
-                        <p class="fw-bold text-success fs-5">$${producto.precio.toLocaleString()}</p>
+                        <p class="card-text flex-grow-1">${producto.descripcion}</p>
+                        ${precioHTML}
                         <button class="btn btn-primary w-100" onclick="agregarAlCarrito(${producto.id})">Agregar al carrito</button>
                     </div>
                 </div>
@@ -62,11 +78,6 @@ function filtrarProductos() {
     }
     
     mostrarProductos(productosFiltrados);
-}
-
-// Función para agregar al carrito
-function agregarAlCarrito(productoId) {
-    alert(`Producto ${productoId} agregado al carrito`);
 }
 
 // Cargar productos cuando la página esté lista
